@@ -2,6 +2,7 @@ baseURL = "/"
 languageCode = "en-us"
 title = "Flow Driving School"
 theme = "flowtheme"
+summaryLength = 50
 [menu]
   [[menu.main]]
     name = "Home"
@@ -14,9 +15,9 @@ theme = "flowtheme"
     url = "/posts/"
     weight = 2
   [[menu.main]]
-    name = "Tags"
+    name = "Categories"
     pre = ""
-    url = "/tags/"
+    url = "/categories/"
     weight = 3
   [[menu.main]]
     name = "Contact"

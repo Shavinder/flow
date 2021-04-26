@@ -8,5 +8,9 @@ draft: false
 
 
 ## Why you should contact Us
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit recusandae voluptates doloremque veniam temporibus porro culpa ipsa, nisi soluta minima saepe laboriosam debitis nesciunt.
+- Acquire a basic life skill
+- Do it once, do it properly
+- Grasp the concepts clearly
+- Become ready for the road test
+- Avoid picking up bad driving habits
 

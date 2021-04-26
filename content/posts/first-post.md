@@ -2,7 +2,7 @@
 title: "Tips to Pass Your Driving Test"
 date: 2020-01-26T23:11:13Z
 draft: false
-tags: ["foo", "bar"]
+categories: ["tips"]
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
 incididunt ut labore et dolore magna aliqua. Pellentesque eu tincidunt tortor 
@@ -12,8 +12,6 @@ tellus. Diam sit amet nisl suscipit adipiscing bibendum est. Sed felis eget
 velit aliquet sagittis id consectetur. Vulputate dignissim suspendisse in est 
 ante in nibh mauris cursus. Morbi quis commodo odio aenean. Mollis nunc sed id 
 semper risus in hendrerit gravida rutrum.
-
-<!--more-->
 
 Ac ut consequat semper viverra nam. Hac habitasse platea dictumst vestibulum 
 rhoncus. Amet porttitor eget dolor morbi non. Justo eget magna fermentum 
