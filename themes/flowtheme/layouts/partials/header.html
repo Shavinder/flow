@@ -1,0 +1,24 @@
+<header class="text-gray-600 body-font">
+    <div class="container mx-auto flex flex-wrap py-5 px-10 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-red-500 rounded-full" viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <span class="ml-3 text-xl">Flow</span>
+      </a>
+      <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main }}
+        <a class="mr-5 hover:text-gray-900 {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) (eq $currentPage.Section .Name) }} text-purple-600 {{end}}" href="{{ .URL }}">
+        {{ if .Pre }}
+        {{ $icon := printf "<i data-feather=\"%s\"></i> " .Pre | safeHTML }}
+        {{ $icon }}
+        {{ end }}
+        {{ $text := print .Name | safeHTML }}
+        {{ $text }}
+        </a>
+        {{ end }}
+      </nav>
+      
+    </div>
+  </header>

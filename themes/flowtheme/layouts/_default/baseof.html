@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    {{- partial "head.html" . -}}
+    <body>
+        {{- partial "header.html" . -}}
+        <div class="px-5 md:px-12 lg:px-16">
+            {{- block "homepage-main" . }}{{- end }}
+        </div>
+        <div id="content" class="w-full p-6 md:w-2/3 md:px-0 md:mx-auto xl:w-2/5">
+        {{- block "main" . }}{{- end }}
+        </div>
+        {{- partial "footer.html" . -}}
+        {{- partial "script.html" . -}}
+    </body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "flow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.12",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.1.2"
+  },
+  "dependencies": {
+    "@tailwindcss/typography": "^0.4.0"
+  }
+}
