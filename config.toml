@@ -1,6 +1,6 @@
-baseURL = "http://example.org/"
+baseURL = "/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Flow Driving School"
 theme = "flowtheme"
 [menu]
   [[menu.main]]
