@@ -15,12 +15,7 @@ summaryLength = 50
     url = "/posts/"
     weight = 2
   [[menu.main]]
-    name = "Categories"
-    pre = ""
-    url = "/categories/"
-    weight = 3
-  [[menu.main]]
     name = "Contact"
     pre = ""
     url = "/contact/"
-    weight = 4
+    weight = 3 
