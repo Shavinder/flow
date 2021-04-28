@@ -1,6 +1,7 @@
 {{ define "main" }}
 
     <h1 class="font-bold md:font-extrabold text-4xl md:text-5xl text-gray-700 mt-8 mb-6">{{ .Title }}</h1>
+
     {{range (.Paginator 5).Pages.ByLastmod.Reverse}}
     <div class="bg-gray-50 p-4 md:p-6 rounded-lg mb-6">
         <h3 class="text-xl font-bold text-gray-900 title-font mb-2"><a class="title" href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
@@ -11,6 +12,5 @@
     </div> 
     {{ end }}
     <div class="">{{ template "_internal/pagination.html" . }}</div>
-
-
+    
 {{ end }}

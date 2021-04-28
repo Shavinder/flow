@@ -1,11 +1,86 @@
-<footer class="text-gray-600 body-font">
-    <div class="container px-5 md:px-12 lg:px-16 py-8 mx-auto flex items-center sm:flex-row flex-col">
+<footer class="text-gray-600 body-font bg-blue-100">
+  <div class="container px-5 py-24 w-full md:px-16 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+
+    <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        <svg width="50" height="50" version="1.1" viewBox="0 0 88.4 88.4" xmlns="http://www.w3.org/2000/svg">
+          <g transform="translate(-46.608 -54.888)">
+           <circle cx="90.808" cy="99.088" r="44.2" fill="#0fc" opacity=".987"/>
+          </g>
+          <g transform="translate(-46.608 -54.888)">
+           <g transform="translate(-.10656 -3.7443)" fill="none" stroke="#005ead" stroke-width=".26458px">
+            <path d="m49.391 110.94s11.787-10.664 41.347-9.1673c35.315 1.7881 38.353-7.1094 38.353-7.1094"/>
+            <path d="m56.935 117.77s8.3051-9.5431 37.751-13.945c34.972-5.2275 37.711-15.985 37.711-15.985"/>
+           </g>
+           <text x="51.465595" y="109.8206" fill="#006680" font-family="Arial" font-size="29.986px" letter-spacing="0px" stroke-width=".33826" word-spacing="0px" style="line-height:0.25" xml:space="preserve"><tspan x="51.465595" y="109.8206" fill="#006680" font-family="'Trebuchet MS'" font-size="29.986px" stroke-width=".33826">FLOW</tspan></text>
+          </g>
+         </svg>
+        
+      </a>
+      <a href="tel:+17808602050" class="inline-block mt-2 px-2 py-1 text-sm rounded-full bg-indigo-600 text-blue-50 shadow-lg">(780) 860 2050</a>
+    </div>
+
+    <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">DRIVING</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Tips</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+          </li>
+        </nav>
+      </div>
       
-      <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">{{ now.Format "2006"}} —
-        <a href="" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@FlowDrivingSchool</a>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">ICBC</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a href="https://www.icbc.com/driver-licensing/visit-dl-office/Pages/Book-a-road-test.aspx" target="_blank"
+            class="text-gray-600 hover:text-gray-800">ICBC Road Test</a>
+          </li>
+          <li>
+            <a href="https://www.icbc.com/driver-licensing/types-licences/Pages/Licence-classes-and-types.aspx" target="_blank"
+            class="text-gray-600 hover:text-gray-800">ICBC License classes</a>
+          </li>
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">KNOWLEDGE TEST</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a  href="https://practicetest.icbc.com/" target="_blank" 
+            class="text-gray-600 hover:text-gray-800" >ICBC practice test</a> 
+          </li>
+          <li>
+            <a href="https://www.icbc.com/driver-licensing/driving-guides/Pages/Learn-to-Drive-Smart.aspx" target="_blank"
+            class="text-gray-600 hover:text-gray-800">Book: Learn to drive smart</a>
+          </li>
+          <li>
+            <a href="https://www.icbc.com/driver-licensing/driving-guides/Pages/Tuning-Up-for-Drivers.aspx" target="_blank"
+            class="text-gray-600 hover:text-gray-800">Book: Tune up for drivers</a>
+          </li>
+          <li>
+            <a href="https://www.yourlibrary.ca/driving/" target="_blank" 
+            class="text-gray-600 hover:text-gray-800" target="_blank">Richmond library test</a>
+          </li>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="bg-gray-100">
+    <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+      <p class="text-gray-500 text-sm text-center sm:text-left">© {{now.Format "2006"}} Flow Driving School —
+        <a href="https://twitter.com/flowdriving" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@flowdrivingschool</a>
       </p>
-      
-      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
         <a class="text-gray-500">
           <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
             <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
@@ -30,4 +105,5 @@
         </a>
       </span>
     </div>
-  </footer>
+  </div>
+</footer>
