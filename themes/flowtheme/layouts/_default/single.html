@@ -1,8 +1,6 @@
 {{ define "main" }}
-<article class="prose lg:prose-lg">
+<article class="prose">
     <h1>{{ .Title }}</h1>
-    {{ partial "metadata.html" . }}
-    <br><br>
     {{ .Content }}
 </article>
 

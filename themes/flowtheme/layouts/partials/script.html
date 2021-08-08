@@ -2,3 +2,17 @@
 <script>
   feather.replace()
 </script>
+<script>
+  $(function() {
+    var header = $("#nav-header");
+    $(window).scroll(function() {    
+        var scroll = $(window).scrollTop();
+    
+        if (scroll >= 50) {
+            header.removeClass('shadow-none').addClass("shadow-md");
+        } else {
+            header.removeClass("shadow-md").addClass('shadow-none');
+        }
+    });
+});
+</script>

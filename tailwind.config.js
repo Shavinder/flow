@@ -2,7 +2,14 @@ module.exports = {
   purge: ['layouts/**/*.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: theme => ({
+        'hero-img': "url('/img/flowbg.png')",
+       }),
+      spacing: {
+        128: '32rem',
+    },
+    },
   },
   variants: {
     extend: {},

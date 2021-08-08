@@ -1,33 +1,37 @@
-<header class="text-gray-600 body-font">
-    <div class="container mx-auto flex flex-wrap py-5 px-10 flex-col md:flex-row items-center">
-      <a href="/" class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-        
-        <svg width="50" height="50" version="1.1" viewBox="0 0 88.4 88.4" xmlns="http://www.w3.org/2000/svg">
-          <g transform="translate(-46.608 -54.888)">
-           <circle cx="90.808" cy="99.088" r="44.2" fill="#0fc" opacity=".987"/>
-          </g>
-          <g transform="translate(-46.608 -54.888)">
-           <g transform="translate(-.10656 -3.7443)" fill="none" stroke="#005ead" stroke-width=".26458px">
-            <path d="m49.391 110.94s11.787-10.664 41.347-9.1673c35.315 1.7881 38.353-7.1094 38.353-7.1094"/>
-            <path d="m56.935 117.77s8.3051-9.5431 37.751-13.945c34.972-5.2275 37.711-15.985 37.711-15.985"/>
-           </g>
-           <text x="51.465595" y="109.8206" fill="#006680" font-family="Arial" font-size="29.986px" letter-spacing="0px" stroke-width=".33826" word-spacing="0px" style="line-height:0.25" xml:space="preserve"><tspan x="51.465595" y="109.8206" fill="#006680" font-family="'Trebuchet MS'" font-size="29.986px" stroke-width=".33826">FLOW</tspan></text>
-          </g>
-         </svg>
+<header id="nav-header" x-data="{ mobileMenuOpen : false }" class="bg-white mt-0 fixed top-0 w-full z-30">
+
+  <div class="container max-w-screen-xl px-6 py-3 md:px-0 md:mx-auto 
+  flex flex-wrap flex-row justify-between items-center 
+  md:space-x-4  relative">
+    <!--Logo-->
+    <a href="/" class="block">
+      <img src="/img/logo.svg" width="50"/>
+    </a>
+    <!--Menu button-->
+    <button @click="mobileMenuOpen = !mobileMenuOpen" class="inline-block md:hidden w-8 h-8 bg-gray-200 text-gray-600 p-1">
+      <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+      </svg>
+    </button>
+    <!--Navigation-->
+    <nav class="absolute md:relative top-20 left-0 md:top-0 
+    md:flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 w-full 
+    md:w-auto bg-white shadow-md md:shadow-none rounded-lg md:rounded-none 
+    md:bg-transparent p-6 md:p-0 font-medium"
+    :class="{ 'flex' : mobileMenuOpen , 'hidden' : !mobileMenuOpen}"
+    @click.away="mobileMenuOpen=false">
+      {{ $currentPage := . }}
+      {{ range .Site.Menus.main }}
+      <a class="block font-semibold text-gray-600 hover:underline {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) (eq $currentPage.Section .Name) }} text-red-600 {{end}}" href="{{ .URL }}">
+      {{ if .Pre }}
+      {{ $icon := printf "<i data-feather=\"%s\"></i> " .Pre | safeHTML }}
+      {{ $icon }}
+      {{ end }}
+      {{ $text := print .Name | safeHTML }}
+      {{ $text }}
       </a>
-      <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-        {{ $currentPage := . }}
-        {{ range .Site.Menus.main }}
-        <a class="mr-5 hover:text-gray-900 {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) (eq $currentPage.Section .Name) }} text-purple-600 {{end}}" href="{{ .URL }}">
-        {{ if .Pre }}
-        {{ $icon := printf "<i data-feather=\"%s\"></i> " .Pre | safeHTML }}
-        {{ $icon }}
-        {{ end }}
-        {{ $text := print .Name | safeHTML }}
-        {{ $text }}
-        </a>
-        {{ end }}
-      </nav>
-      
-    </div>
-  </header>
+      {{ end }}
+    </nav>
+  </div>
+
+</header>

@@ -9,17 +9,5 @@ summaryLength = 50
     pre = ""
     url = "/"
     weight = 1
-  [[menu.main]]
-    name = "Posts"
-    pre = ""
-    url = "/posts/"
-    weight = 2
-  [[menu.main]]
-    name="About"
-    url = "/about/"
-    weight = 3
-  [[menu.main]]
-    name = "Contact"
-    pre = ""
-    url = "/contact/"
-    weight = 4 
+  
+  
