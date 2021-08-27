@@ -1,7 +1,29 @@
 {{ define "main" }}
-<article class="prose">
+<article class="prose prose-sm sm:prose lg:prose-lg mx-auto">
+    
     <h1>{{ .Title }}</h1>
     {{ .Content }}
 </article>
+{{if eq .Type "posts"}}
+<div class="mt-12 grid grid-cols-2 gap-4">
+    
 
+    {{ if .PrevInSection }}
+        <a href="{{ .PrevInSection.RelPermalink}}" class="bg-gray-50 hover:bg-gray-100 text-gray-700 py-4 px-2 text-sm text-left">
+            <span class="uppercase font-thin text-xs">Prev:</span><br> {{ .PrevInSection.Title | markdownify }}</a>
+    {{else}}
+        <span class="bg-gray-50"></span>
+    {{ end }}
+
+    {{ if .NextInSection }}
+        <a href="{{ .NextInSection.Permalink }}" class="bg-gray-50 hover:bg-gray-100 text-gray-700 py-4 px-2 text-sm text-right">
+            <span class="uppercase font-thin text-xs">Next:</span><br> {{ .NextInSection.Title | markdownify }}
+        </a>
+    {{else}}
+        <span class="bg-gray-50"></span>
+    {{ end }}
+    
+
+</div>
+{{end}}
 {{ end }}
