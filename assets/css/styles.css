@@ -12,5 +12,9 @@
     }
     h1, h2, h3{
         font-family: 'Roboto';
+        scroll-margin-top: 5rem;
+    }
+    html{
+        scroll-behavior: smooth;
     }
 }

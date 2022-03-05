@@ -2,6 +2,9 @@
 <article class="prose prose-sm sm:prose lg:prose-lg mx-auto">
     
     <h1>{{ .Title }}</h1>
+    <aside>
+        {{ .TableOfContents }}
+    </aside>
     {{ .Content }}
 </article>
 {{if eq .Type "posts"}}
