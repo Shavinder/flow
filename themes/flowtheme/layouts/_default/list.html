@@ -1,14 +1,14 @@
 {{ define "main" }}
-<article class="prose prose-sm sm:prose lg:prose-lg mx-auto">
-    <h1>{{ .Title }}</h1>
-    
-    <ul>
+<div class="mx-auto">
+    <h1 class="text-5xl font-extrabold mb-8">{{ .Title }}</h1>
+
+    <ul class="ml-8 list-inside list-disc">
         {{range (.Paginator 5).Pages}}
-        <li><a href="{{ .RelPermalink }}" >{{ .Title|humanize }}</a></li>
-        {{ end }}
+            <li><a href="{{ .RelPermalink }}" class="no-underline hover:text-blue-400">{{ .Title|humanize }}</a></li>
+        {{ end }}  
     </ul>
     
-</article>
+</div>
 
         
 <div>{{ template "_internal/pagination.html" . }}</div>

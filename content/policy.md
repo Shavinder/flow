@@ -18,4 +18,4 @@ Road tests can be booked either by student or by Flow Driving School. The studen
 - For cancelling a scheduled lesson a notice of 24 hours is required. Failure to do so would result in full charges for the lesson. For cancelling a road test booked by Flow Driving School, a notice of 72 hours is required. In case of late cancellation ICBC may charge penalty fees which will have to be borne by the student. The student should consult the ICBC website regarding this.
 - Flow Driving School shall make its best efforts to train the student to meet the requirements of the ICBC road tests but does not offer any guarantee that the student will pass the ICBC road test.
 - Students should consult www.flowdrivingschool.com for lessons, packages and car rental charges.
-
+- Any traffic ticket received due to student's fault while driving, shall have to be paid by the student.

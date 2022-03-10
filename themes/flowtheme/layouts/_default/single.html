@@ -10,7 +10,6 @@
 {{if eq .Type "posts"}}
 <div class="mt-12 grid grid-cols-2 gap-4">
     
-
     {{ if .PrevInSection }}
         <a href="{{ .PrevInSection.RelPermalink}}" class="bg-gray-50 hover:bg-gray-100 text-gray-700 py-4 px-2 text-sm text-left">
             <span class="uppercase font-thin text-xs">Prev:</span><br> {{ .PrevInSection.Title | markdownify }}</a>
